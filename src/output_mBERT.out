@@ -1,0 +1,42 @@
+2022-01-24 13:03:11.752898: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory
+2022-01-24 13:03:11.752937: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+
+
+----------------------------------
+mBERT title training punt
+----------------------------------
+
+
+len Dataset 6-class: 1200000
+n_articles for each label: Centre-left             200000
+Conservative            200000
+Left-wing               200000
+Liberal                 200000
+Liberal-conservative    200000
+Right-wing              200000
+Name: political_leaning, dtype: int64
+                  title  maintext    date  political_leaning  all_text
+label data_type                                                       
+0     train      180000    180000  180000             180000    180000
+      val         20000     20000   20000              20000     20000
+1     train      180000    180000  180000             180000    180000
+      val         20000     20000   20000              20000     20000
+2     train      180000    180000  180000             180000    180000
+      val         20000     20000   20000              20000     20000
+3     train      180000    180000  180000             180000    180000
+      val         20000     20000   20000              20000     20000
+4     train      180000    180000  180000             180000    180000
+      val         20000     20000   20000              20000     20000
+5     train      180000    180000  180000             180000    180000
+      val         20000     20000   20000              20000     20000
+{'Centre-left': 2, 'Conservative': 0, 'Left-wing': 4, 'Liberal': 1, 'Liberal-conservative': 3, 'Right-wing': 5}
+end tokenization training
+end tokenization validation
+<class 'numpy.ndarray'>
+end tokenization and encoding
+Some weights of the model checkpoint at bert-base-multilingual-cased were not used when initializing BertForSequenceClassification: ['cls.seq_relationship.bias', 'cls.predictions.transform.LayerNorm.bias', 'cls.predictions.transform.dense.bias', 'cls.seq_relationship.weight', 'cls.predictions.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.decoder.weight', 'cls.predictions.transform.dense.weight']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-multilingual-cased and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+cpu

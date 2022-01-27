@@ -1,2 +1,6 @@
 SSH
-src
+.ipynb_checkpoints
+notebook/appoggio.ipynb
+explainability/data_to_explain
+data
+models

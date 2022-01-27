@@ -1,0 +1,315 @@
+2022-01-15 20:35:20.611001: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory
+2022-01-15 20:35:20.611084: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+
+
+----------------------------------
+mBERT punt test bias
+----------------------------------
+
+
+Number of test sentences: 45,000
+
+Device cpu
+n_articles for each label: Centre-left             7500
+Conservative            7500
+Left-wing               7500
+Liberal                 7500
+Liberal-conservative    7500
+Right-wing              7500
+Name: political_leaning, dtype: int64
+{'Left-wing': 4, 'Conservative': 0, 'Liberal-conservative': 3, 'Right-wing': 5, 'Liberal': 1, 'Centre-left': 2}
+
+
+F1 Score (Weighted): 0.931
+
+
+Accuracy:
+Class: 0 Conservative, 
+6946/7500 0.9261333333333334
+Class: 1 Liberal, 
+6679/7500 0.8905333333333333
+Class: 2 Centre-left, 
+6730/7500 0.8973333333333333
+Class: 3 Liberal-conservative, 
+7042/7500 0.9389333333333333
+Class: 4 Left-wing, 
+7127/7500 0.9502666666666667
+Class: 5 Right-wing, 
+7397/7500 0.9862666666666666
+
+
+----------------------------------
+mBERT punt test no bias
+----------------------------------
+
+
+Number of test sentences: 39,000
+
+Device cpu
+n_articles for each label: Liberal                 7500
+Centre-left             7500
+Liberal-conservative    7500
+Conservative            7500
+Right-wing              4500
+Left-wing               4500
+Name: political_leaning, dtype: int64
+{'Left-wing': 4, 'Conservative': 0, 'Liberal-conservative': 3, 'Right-wing'
+
+F1 Score (Weighted): 0.278
+
+
+Accura
+
+F1 Score (Weighted): 0.278
+
+
+Accuracy:
+Class: 0 Conservative, 
+2682/7500 0.3576
+Class: 1 Liberal, 
+1313/7500 0.17506666666666668
+Class: 2 Centre-left, 
+2655/7500 0.354
+Class: 3 Liberal-conservative, 
+4057/7500 0.5409333333333334
+Class: 4 Left-wing, 
+591/4500 0.13133333333333333
+Class: 5 Right-wing, 
+16/4500 0.0035555555555555557
+
+
+----------------------------------
+mBERT no-punt test bias
+----------------------------------
+
+
+Number of test sentences: 45,000
+
+Device cpu
+n_articles for each label: Centre-left             7500
+Conservative            7500
+Left-wing               7500
+Liberal                 7500
+Liberal-conservative    7500
+Right-wing              7500
+Name: political_leaning, dtype: int64
+{'Left-wing': 4, 'Conservative': 0, 'Liberal-conservative': 3, 'Right-wing'
+
+F1 Score (Weighted): 0.891
+
+
+Accura
+
+F1 Score (Weighted): 0.892
+
+
+Accuracy:
+Class: 0 Conservative, 
+6692/7500 0.8922666666666667
+Class: 1 Liberal, 
+6354/7500 0.8472
+Class: 2 Centre-left, 
+6090/7500 0.812
+Class: 3 Liberal-conservative, 
+6727/7500 0.8969333333333334
+Class: 4 Left-wing, 
+6928/7500 0.9237333333333333
+Class: 5 Right-wing, 
+7375/7500 0.9833333333333333
+
+
+----------------------------------
+mBERT no-punt test no bias
+----------------------------------
+
+
+Number of test sentences: 39,000
+
+Device cpu
+n_articles for each label: Liberal                 7500
+Centre-left             7500
+Liberal-conservative    7500
+Conservative            7500
+Right-wing              4500
+Left-wing               4500
+Name: political_leaning, dtype: int64
+{'Left-wing': 4, 'Conservative': 0, 'Liberal-conservative': 3, '
+
+F1 Score (Weighted): 0.27
+
+
+Accuracy:
+Class: 0
+
+F1 Score (Weighted): 0.27
+
+
+Accuracy:
+Class: 0 Conservative, 
+2639/7500 0.35186666666666666
+Class: 1 Liberal, 
+1249/7500 0.16653333333333334
+Class: 2 Centre-left, 
+2996/7500 0.3994666666666667
+Class: 3 Liberal-conservative, 
+3922/7500 0.5229333333333334
+Class: 4 Left-wing, 
+491/4500 0.10911111111111112
+Class: 5 Right-wing, 
+55/4500 0.012222222222222223
+
+
+----------------------------------
+XLM punt test bias
+----------------------------------
+
+
+Number of test sentences: 45,000
+
+Device cpu
+n_articles for each label: Centre-left             7500
+Conservative            7500
+Left-wing               7500
+Liberal                 7500
+Liberal-conservative    7500
+Right-wing              7500
+Name: political_leaning, dtype: int64
+{'Left-wing': 4, 'Conservative': 0, 'Liberal-conservative': 3, '
+
+F1 Score (Weighted): 0.936
+
+
+Accuracy:
+Class: 
+
+F1 Score (Weighted): 0.939
+
+
+Accuracy:
+Class: 0 Conservative, 
+6969/7500 0.9292
+Class: 1 Liberal, 
+6738/7500 0.8984
+Class: 2 Centre-left, 
+6838/7500 0.9117333333333333
+Class: 3 Liberal-conservative, 
+7107/7500 0.9476
+Class: 4 Left-wing, 
+7174/7500 0.9565333333333333
+Class: 5 Right-wing, 
+7424/7500 0.9898666666666667
+
+
+----------------------------------
+XLM punt test no bias
+----------------------------------
+
+
+Number of test sentences: 39,000
+
+Device cpu
+n_articles for each label: Liberal                 7500
+Centre-left             7500
+Liberal-conservative    7500
+Conservative            7500
+Right-wing              4500
+Left-wing               4500
+Name: political_leaning, dtype: int64
+{'Left-wing': 4, 'Conservative': 0, 'Liberal-conservative': 3, 'Right-wing': 5, 'Liberal': 1, 'Centr
+
+F1 Score (
+
+F1 Score (Weighted): 0.299
+
+
+Accuracy:
+Class: 0 Conservative, 
+3074/7500 0.40986666666666666
+Class: 1 Liberal, 
+1512/7500 0.2016
+Class: 2 Centre-left, 
+2897/7500 0.38626666666666665
+Class: 3 Liberal-conservative, 
+4238/7500 0.5650666666666667
+Class: 4 Left-wing, 
+495/4500 0.11
+Class: 5 Right-wing, 
+29/4500 0.0064444444444444445
+
+
+----------------------------------
+XLM no-punt test bias
+----------------------------------
+
+
+Number of test sentences: 45,000
+
+Device cpu
+n_articles for each label: Centre-left             7500
+Conservative            7500
+Left-wing               7500
+Liberal                 7500
+Liberal-conservative    7500
+Right-wing              7500
+Name: political_leaning, dtype: int64
+{'Left-wing': 4, 'Conservative': 0, 'Liberal-conservative': 3, 'Right-wing': 5, 'Liberal': 1, 'Centr
+
+F1 Score (
+
+F1 Score (Weighted): 0.901
+
+
+Accuracy:
+Class: 0 Conservative, 
+6788/7500 0.9050666666666667
+Class: 1 Liberal, 
+6350/7500 0.8466666666666667
+Class: 2 Centre-left, 
+6266/7500 0.8354666666666667
+Class: 3 Liberal-conservative, 
+6803/7500 0.9070666666666667
+Class: 4 Left-wing, 
+6995/7500 0.9326666666666666
+Class: 5 Right-wing, 
+7376/7500 0.9834666666666667
+
+
+----------------------------------
+XLM no-punt test no bias
+----------------------------------
+
+
+Number of test sentences: 39,000
+
+Device cpu
+n_articles for each label: Liberal                 7500
+Centre-left             7500
+Liberal-conservative    7500
+Conservative            7500
+Right-wing              4500
+Left-wing               4500
+Name: political_leaning, dtype: int64
+{'Left-wing': 4, 'Conservative': 0, 'Liberal-conservative': 3, '
+
+F1 Score (Weighted): 0.269
+
+
+Accuracy:
+Class: 
+
+F1 Score (Weighted): 0.269
+
+
+Accuracy:
+Class: 0 Conservative, 
+2646/7500 0.3528
+Class: 1 Liberal, 
+1049/7500 0.13986666666666667
+Class: 2 Centre-left, 
+3289/7500 0.43853333333333333
+Class: 3 Liberal-conservative, 
+3755/7500 0.5006666666666667
+Class: 4 Left-wing, 
+570/4500 0.12666666666666668
+Class: 5 Right-wing, 
+78/4500 0.017333333333333333
