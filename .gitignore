@@ -1,6 +1,8 @@
 SSH
 .ipynb_checkpoints
-notebook/appoggio.ipynb
+notebooks/appoggio.ipynb
+notebooks/political_classifier_datahandling.ipynb
 explainability
 data
 models
+explainability/mappings/media_label.json
